@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#6A1515"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Pizzaria do Manel"
+        android:textColor="#AE1E1E"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDias"
+        android:layout_width="71dp"
+        android:layout_height="0dp"
+        android:text="Seg a Dom"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtHorarios"
+        android:layout_width="71dp"
+        android:layout_height="21dp"
+        android:text="aberto 24h"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDias" />
+
+    <ImageView
+        android:id="@+id/pizza_1"
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngegg" />
+
+    <ImageView
+        android:id="@+id/pizza_2"
+        android:layout_width="158dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toEndOf="@+id/pizza_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza2" />
+
+    <ImageView
+        android:id="@+id/pizza_3"
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza4" />
+
+    <ImageView
+        android:id="@+id/pizza_4"
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toEndOf="@+id/pizza_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza3" />
+
+    <TextView
+        android:id="@+id/titulo_1"
+        android:layout_width="76dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="52dp"
+        android:text="Portuguesa"
+        app:layout_constraintBottom_toTopOf="@+id/pizza_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Calabresa"
+        app:layout_constraintBottom_toTopOf="@+id/pizza_2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Bacalhau"
+        app:layout_constraintBottom_toTopOf="@+id/pizza_3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Margarita"
+        app:layout_constraintBottom_toTopOf="@+id/pizza_4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnPedido"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#CC2323"
+        android:text="FAÇA O SEU PEDIDO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/qnt_1"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_1" />
+
+    <Spinner
+        android:id="@+id/qnt_2"
+        android:layout_width="158dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_2" />
+
+    <Spinner
+        android:id="@+id/qnt_3"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_3" />
+
+    <Spinner
+        android:id="@+id/qnt_4"
+        android:layout_width="153dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
